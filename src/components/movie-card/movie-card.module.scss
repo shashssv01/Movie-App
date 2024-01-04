@@ -1,0 +1,67 @@
+@import "../../assets/scss/variables.scss";
+
+.movieContainer {
+    border-radius: 2rem;
+    box-shadow: 0 0 8px 0 $lightGrey;
+    max-width: 25rem;
+
+    .movie {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        width: 100%;
+    }
+
+    .movieCardDetail {
+
+        .movieName {
+            color: $primaryRed;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .theatreName {
+            color: $black;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .theatreLocation {
+            color: $grey;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .releaseDate {
+            color: $black;
+            font-size: 1rem;
+
+            .releaseDateSpan {
+                font-weight: 600;
+            }
+        }
+
+        .btnBookNow {
+            background-color: $primaryRed;
+            color: $white;
+            border-radius: 0.5rem;
+            width: 20rem;
+            transition: 0.2s;
+            font-size: 1.1rem;
+            box-shadow: 0 0 5px 0 $black;
+    
+            span {
+                padding-bottom: 0 !important;
+            }
+    
+            &:hover {
+                background-color: $primaryRedHover;
+                color: $white;
+            }
+    
+            &:active {
+                transform: scale(0.90);
+                transition: 0.2s;
+            }
+        }
+    }
+}

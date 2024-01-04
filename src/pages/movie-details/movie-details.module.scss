@@ -1,0 +1,191 @@
+@import "../../assets/scss/variables.scss";
+
+.movieDetails {
+
+    .movieDetailsContainer {
+        border-radius: 2rem;
+        box-shadow: 0 0 8px 0 $lightGrey;
+
+        .movie {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            width: 100%;
+            max-height: 30rem;
+        }
+
+        .movieDetailsContent {
+
+            .movieCardDetailFirst {
+
+                .movieName {
+                    color: $primaryRed;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                .theatreName {
+                    color: $black;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                .theatreLocation {
+                    color: $grey;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                .releaseDate {
+                    color: $black;
+                    font-size: 1rem;
+
+                    .releaseDateSpan {
+                        font-weight: 600;
+                    }
+                }
+
+                .btnBookNow {
+                    background-color: $primaryRed;
+                    color: $white;
+                    border-radius: 0.5rem;
+                    width: 20rem;
+                    transition: 0.2s;
+                    font-size: 1.1rem;
+                    box-shadow: 0 0 5px 0 $black;
+            
+                    span {
+                        padding-bottom: 0 !important;
+                    }
+            
+                    &:hover {
+                        background-color: $primaryRedHover;
+                        color: $white;
+                    }
+            
+                    &:active {
+                        transform: scale(0.90);
+                        transition: 0.2s;
+                    }
+                }
+
+                .disabledBookNow {
+                    background-color: $disabledRed;
+                    color: $grey;
+                    border-radius: 0.5rem;
+                    width: 20rem;
+                    transition: 0.2s;
+                    font-size: 1.1rem;
+                    box-shadow: 0 0 5px 0 $black;
+            
+                    span {
+                        padding-bottom: 0 !important;
+                    }
+            
+                    &:hover {
+                        background-color: $primaryRedHover;
+                        color: $white;
+                    }
+            
+                    &:active {
+                        transform: scale(0.90);
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            .movieCardDetailSecond {
+
+                .scrollableTabs {
+                    max-width: 20rem;
+
+                    .dateComponent {
+                        cursor: pointer;
+                        user-select: none;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background-color: $lightGrey;
+                        }
+
+                        &:active {
+                            transform: scale(0.80);
+                            transition: 0.2s;
+                        }
+
+                        .date {
+                            font-size: 1.5rem;
+                            color: $primaryRed;
+                            font-weight: 600;
+                        }
+
+                        .month {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .dateComponentActive {
+                        background-color: $primaryRed;
+                        transition: 0.2s;
+
+                        &:hover {
+                            background-color: $primaryRed !important;
+                        }
+
+                        &:active {
+                            transform: scale(1) !important;
+                            transition: 0s !important;
+                        }
+
+                        .date {
+                            color: $white;
+                        }
+
+                        .month {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .showTimes {
+
+                .showTime {
+                    box-shadow: 0 0 8px 0 $primaryRed;
+                    user-select: none;
+                    cursor: pointer;
+                    color: $primaryRed;
+                    width: 12rem;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $lightGrey;
+                    }
+
+                    &:active {
+                        transform: scale(0.80);
+                        transition: 0.2s;
+                    }
+                }
+
+                .activeTime {
+                    box-shadow: 0 0 8px 0 $lightGrey !important;
+                    user-select: none !important;
+                    cursor: pointer !important;
+                    color: $white !important;
+                    width: 12rem !important;
+                    text-align: center !important;
+                    background-color: $primaryRed !important;
+
+                    &:hover {
+                        background-color: $primaryRedHover !important;
+                    }
+
+                    &:active {
+                        transform: scale(1) !important;
+                        transition: 0s !important;
+                    }
+                }
+            }
+        }
+    }
+}

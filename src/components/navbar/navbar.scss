@@ -1,0 +1,8 @@
+@import '../../assets/scss/variables.scss';
+
+.MuiListItem-button {
+    &:hover {
+        background-color: $primaryRed !important;
+        color: white !important;
+    }
+}

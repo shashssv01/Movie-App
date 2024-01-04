@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables.scss";
+
+.title {
+    color: $primaryRed;
+    font-size: 2rem;
+    font-weight: 600;
+
+    a {
+        color: $primaryBlue;
+        text-decoration: underline;
+
+        &:hover {
+            color: $primaryBlueHover;
+        }
+    }
+}

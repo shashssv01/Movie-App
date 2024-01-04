@@ -1,0 +1,97 @@
+@import '../../assets/scss/variables.scss';
+
+.register {
+    height: 100%;
+    color: $black !important;
+
+    * {
+        user-select: none;
+    }
+
+    .registerHeading {
+        font-size: 1.7rem;
+        font-weight: 1000 !important;
+    }
+
+    .registerText {
+        font-size: 1rem;
+    }
+
+    .registerSmallText {
+        font-size: 0.6rem !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: $primaryBlue !important;
+
+        &:hover {
+            color: $primaryBlueHover !important;
+        }
+    }
+
+    .textInput {
+        width: 20rem;
+    }
+
+    .btnRegister {
+        background-color: $primaryRed;
+        color: $white;
+        border-radius: 0.5rem;
+        width: 20rem;
+        transition: 0.2s;
+        font-size: 1.1rem;
+        box-shadow: 0 0 5px 0 $black;
+
+        span {
+            padding-bottom: 0 !important;
+        }
+
+        &:hover {
+            background-color: $primaryRedHover;
+            color: $white;
+        }
+
+        &:active {
+            transform: scale(0.90);
+            transition: 0.2s;
+        }
+    }
+
+    .registerForm {
+        width: 20rem;
+    }
+
+    .registerContainer {
+        box-shadow: 0 0 8px 0 $grey;
+    }
+
+    .horizontalRule {
+        width: 7rem !important;
+        border: solid 1px $black !important;
+        opacity: 1 !important;
+    }
+
+    .btnAlternateRegister {
+        font-size: 0.6rem !important;
+        font-weight: 700;
+        background-color: $white;
+        border-radius: 0.2rem;
+        transition: 0.2s;
+        color: $black !important;
+        box-shadow: 0 0 5px 0 $black;
+
+        span {
+            padding-bottom: 0 !important;
+        }
+
+        &:hover {
+            background-color: $white;
+        }
+
+        &:active {
+            transform: scale(0.90);
+            transition: 0.2s;
+        }
+    }
+}
